@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reaction Time Test</h1>
+        <p>Click on the red circles as fast as you can!</p>
+        <button id="startGame">Start</button>
+        <div id="gameArea"></div>
+        <p id="result"></p>
+        
+        <!-- Меню настроек -->
+        <div class="settings">
+            <label for="circleColor">Circle Color:</label>
+            <input type="color" id="circleColor" value="#ff0000">
+            
+            <label for="glowColor">Glow Color:</label>
+            <input type="color" id="glowColor" value="#ff0000">
+        </div>
+    </div>
+    <footer>Creator - Bennet</footer>
+
+    <!-- Аудио для клика -->
+    <audio id="clickSound" src="click.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

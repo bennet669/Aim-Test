@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 90%;
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    background: #ff4757;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #e84118;
+    transform: scale(1.1);
+}
+
+#gameArea {
+    position: relative;
+    width: 90vw;
+    height: 80vh;
+    background: black;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px var(--glow-color, rgba(255, 0, 0, 0.5));
+}
+
+.circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--circle-color, red);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.circle:hover {
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
